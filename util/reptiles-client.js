@@ -44,7 +44,7 @@
     var r = new XMLHttpRequest(),
         last = 0;
 
-    r.open('POST','/api/'+Object.keys(queue).join(','),true);
+    r.open('POST','/up/api/'+Object.keys(queue).join(','),true);
     r.setRequestHeader('Content-Type','application/json;charset=UTF-8');
     r.send(JSON.stringify(self.$input));
     r.onprogress = function() {
